@@ -4,11 +4,11 @@ project(MY-RP6502-PROJECT C ASM)
 
 add_subdirectory(rp6502-sdk)
 
-add_executable(hello)
-rp6502_executable(hello)
-target_sources(hello PRIVATE
-    src/hello.c
+add_executable(mpv)
+rp6502_executable(mpv)
+target_sources(mpv PRIVATE
+    src/mpv.c
 )
-target_link_libraries(hello PRIVATE
+target_link_libraries(mpv PRIVATE
     rp6502
 )
